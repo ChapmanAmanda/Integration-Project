@@ -97,7 +97,7 @@ public class Main {
        *Casting -- forces Java to treat a variable as a different data type
        *Final -- constant variable, cannot be changed
        */
-      
+      input.close();
     }
   
 }
