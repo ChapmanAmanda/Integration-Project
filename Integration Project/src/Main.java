@@ -1,11 +1,17 @@
 import java.util.Scanner;
+
 //Amanda Chapman
 //This program is a "what if" grade calculator
 //It is a demonstration of what I learn in COP2006
 
+//Driver class, "The Program"
 public class Main {
-  
-    public static void main(String[] args) {
+    
+    //This is a header
+    //public is an access modifier
+    //void is the return type, meaning this method doesn't return anything
+    //method names should be in lowerCamelCase and be named with a verb
+    public static void main(String[] args) { 
       String greeting = "Hello!\nWelcome to my program!\n"
           + "I am here to help you calculate your expected grade.";
       
@@ -99,5 +105,6 @@ public class Main {
        */
       input.close();
     }
+    
   
 }
