@@ -4,7 +4,7 @@ import java.util.Scanner;
 //This program is a "what if" grade calculator
 //It is a demonstration of what I learn in COP2006
 
-//Driver class, "The Program"gg
+//Driver class, "The Program"
 public class Main {
     
     //This is a header
