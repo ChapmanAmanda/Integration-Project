@@ -11,6 +11,7 @@ public class Main {
     //public is an access modifier
     //void is the return type, meaning this method doesn't return anything
     //method names should be in lowerCamelCase and be named with a verb
+  
     public static void main(String[] args) { 
       String greeting = "Hello!\nWelcome to my program!\n"
           + "I am here to help you calculate your expected grade.";
