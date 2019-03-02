@@ -33,17 +33,16 @@ public class Main {
         // primitive data types
         // this is a method call
         Option1.dataTypes();
-
         // this calls the method dataTypes from the class Option1
-
       } else if (menuChoice == 2) {
         // grade calculator
         double MAXGRADE = 100.0;
         double gradeSum = 0;
-        double add = 0 ;
-        double grade = 0 ;
+        double add = 0;
+        double grade = 0;
         Option2.getGrade(MAXGRADE, gradeSum, add, grade);
-        
+        //method calls contain arguments in parenthesis
+
       } else if (menuChoice == 3) {
         // gpa calculator
         Option3.getGPA();

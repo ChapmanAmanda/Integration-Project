@@ -39,7 +39,7 @@ class Option3 {
         total = total + points;
       }
     }
-    double gpa = total / classNum; // calculate the current gpa
+    double gpa = (int)total / classNum; // calculate the current gpa
 
     System.out.println("Your current GPA is: " + gpa); // display to user
     input.close();
