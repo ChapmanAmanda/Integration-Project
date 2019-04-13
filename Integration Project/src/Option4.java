@@ -52,6 +52,6 @@ class Option4 {
       System.out.println(number + " ");
     }
     
-    input.close();
+   
   }
 }
