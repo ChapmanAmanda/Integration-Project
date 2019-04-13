@@ -9,7 +9,7 @@ class Option4 {
 	// menu choice #4
 	// javaQuiz method
 	// this method is a fun java quiz
-	public static void javaQuiz() {
+	public static void java() {
 		Scanner input = new Scanner(System.in);
 		System.out.println("\nExcellent Choice!\n");
 

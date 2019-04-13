@@ -37,7 +37,7 @@ public class Main {
 				Option3.getGPA();
 				break;
 			case 4:
-				Option4.javaQuiz();
+				Option4.java();
 				break;
 			case 5:
 				Option5.polymorphism();

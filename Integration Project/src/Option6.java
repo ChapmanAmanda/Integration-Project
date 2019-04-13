@@ -28,7 +28,7 @@ class Student {
 	}
 
 	public Student(String name, double grade, double GPA) {
-		
+
 	}
 
 	// setter methods
@@ -57,7 +57,7 @@ class Student {
 		return studentGPA;
 	}
 
-	public double getCourseGrade(double sum, int n, double average,double grade) {
+	public double getCourseGrade(double sum, int n, double average, double grade) {
 		Scanner sc = new Scanner(System.in);
 		// gets scores for number of assignments and accumulates the sum
 		System.out.println("How many assignments were graded? ");
