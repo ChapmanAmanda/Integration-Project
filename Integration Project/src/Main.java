@@ -10,21 +10,21 @@ public class Main {
 	// void is the return type, meaning this method doesn't return anything
 	// method names should be in lowerCamelCase and be named with a verb
 
-	public static void main(String[] args) throws java.lang.Exception{
+	public static void main(String[] args) throws java.lang.Exception {
 		Scanner input = new Scanner(System.in);
-		int program =1;
+		int program = 1;
 		int menuChoice;
 
 		String greeting = "Hello!\nWelcome to my program!\n";
 		System.out.println(greeting); // prints a greeting to the user
 		do {
-			//display menu and get input
+			// display menu and get input
 			String menu = "Please make a selection from the menu below:\n" + "\t1. Primitive Data Types\n"
 					+ "\t2. Grade calculator\n" + "\t3. GPA calculator\n" + "\t4. Java programming\n"
 					+ "\t5. Polymorphism and Inheritance\n";
 			System.out.println(menu);
 			System.out.println("Enter a number between 1 and 5: ");
-			
+
 			menuChoice = input.nextInt();
 			switch (menuChoice) {
 			case 1:
@@ -42,18 +42,20 @@ public class Main {
 			case 5:
 				Option5.polymorphism();
 				break;
+			case 6:
+				Option6.display();
+				break;
 			default:
 				System.out.println("The number you entered is invalid.");
 				menuChoice = input.nextInt();
 			}
-		}while(program == 1);
-		
-		
+		} while (program == 1);
+
 		try {
-			System.out.println("Enter an integer between 1 and 5.");
+			System.out.println("Enter a number between 1 and 5.");
 			menuChoice = input.nextInt();
 		} catch (Exception ex) {
-			System.out.println(ex);
+			System.out.println("Invalid entry");
 		}
 	}
 	// in this method, == was used to compare objects

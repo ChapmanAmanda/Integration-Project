@@ -34,7 +34,7 @@ class Option2 {
 		grade = (int) gradeSum / assign; // calculate average grade and use casting
 
 		System.out.printf("\nYour average grade was " + grade); // show user their grade
-		
+
 		return grade;
 	}
 }
