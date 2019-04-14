@@ -43,7 +43,7 @@ public class Main {
 				Option5.polymorphism();
 				break;
 			case 6:
-				Option6.display();
+				Option6.display(0);
 				break;
 			default:
 				System.out.println("The number you entered is invalid.");

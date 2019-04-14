@@ -8,12 +8,12 @@ class Option3 {
 	// menu choice #3
 	// getGPA method
 	// this method calculates the students GPA
-	public static void getGPA() {
+	public static double getGPA() {
 		String grades = "";
 		double total = 0;
 		int points;
 		Scanner input = new Scanner(System.in);
-
+		System.out.println("\nLet's calculate your GPA: ");
 		// ask user for the number of classes
 		System.out.println("How many classes did you take? ");
 		int classNum = input.nextInt();
@@ -42,9 +42,8 @@ class Option3 {
 			}
 		}
 		double gpa = (int) total / classNum; // calculate the current gpa
-
 		System.out.println("Your current GPA is: " + gpa); // display to user
-
+		return gpa;
 	}
 	// In this method the .equals method was used to compare the two strings
 }
