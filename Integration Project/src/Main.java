@@ -14,6 +14,7 @@ public class Main {
 		Scanner input = new Scanner(System.in);
 		int program = 1;
 		int menuChoice;
+		boolean exit = false;
 
 		String greeting = "Hello!\nWelcome to my program!\n";
 		System.out.println(greeting); // prints a greeting to the user
@@ -21,10 +22,11 @@ public class Main {
 			// display menu and get input
 			String menu = "Please make a selection from the menu below:\n" + "\t1. Primitive Data Types\n"
 					+ "\t2. Grade calculator\n" + "\t3. GPA calculator\n" + "\t4. Java programming\n"
-					+ "\t5. Polymorphism and Inheritance\n";
+					+ "\t5. Polymorphism and Inheritance\n" +"\t6. Arrays\n" +"\t7. Exit program";
 			System.out.println(menu);
-			System.out.println("Enter a number between 1 and 5: ");
-
+			System.out.println("Enter a number between 1 and 6: ");
+			
+			
 			menuChoice = input.nextInt();
 			switch (menuChoice) {
 			case 1:
@@ -40,16 +42,16 @@ public class Main {
 				Option4.java();
 				break;
 			case 5:
-				Option5.polymorphism();
+				Option5.polymorphism(); //inheritance and polymorphism
 				break;
 			case 6:
-				Option6.display(0);
+				Option6.display(); // arrays + private fields, setters, getters, constructors
 				break;
-			default:
-				System.out.println("The number you entered is invalid.");
-				menuChoice = input.nextInt();
+			case 7:
+				exit = true;
+				break;
 			}
-		} while (program == 1);
+		} while (!exit);
 
 		try {
 			System.out.println("Enter a number between 1 and 5.");
