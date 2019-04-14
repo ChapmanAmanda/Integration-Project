@@ -16,15 +16,15 @@ public class Main {
 		int menuChoice;
 		boolean exit = false;
 
-		String greeting = "Hello!\nWelcome to my program!\n";
+		String greeting = "Hello!\nWelcome to my program!";
 		System.out.println(greeting); // prints a greeting to the user
 		do {
 			// display menu and get input
-			String menu = "Please make a selection from the menu below:\n" + "\t1. Primitive Data Types\n"
+			String menu = "\nPlease make a selection from the menu below:\n" + "\t1. Primitive Data Types\n"
 					+ "\t2. Grade calculator\n" + "\t3. GPA calculator\n" + "\t4. Java programming\n"
 					+ "\t5. Polymorphism and Inheritance\n" +"\t6. Arrays\n" +"\t7. Exit program";
 			System.out.println(menu);
-			System.out.println("Enter a number between 1 and 6: ");
+			System.out.println("Enter a number between 1 and 7: ");
 			
 			
 			menuChoice = input.nextInt();
@@ -45,7 +45,8 @@ public class Main {
 				Option5.polymorphism(); //inheritance and polymorphism
 				break;
 			case 6:
-				Option6.display(); // arrays + private fields, setters, getters, constructors
+				Option6.display();
+				Option6.arrayStuff();// arrays + private fields, setters, getters, constructors
 				break;
 			case 7:
 				exit = true;

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 //Amanda Chapman
 //This class demonstrates Arrays
 class Option6 {
-
 	public static void display() {
 
 		Student student1; // declare variable to reference student
@@ -12,25 +11,24 @@ class Option6 {
 		
 		System.out.println("Student Name: " + student1.getStudentName(""));
 		System.out.println("Grade in the course: " + student1.getCourseGrade());
-		System.out.println("Array information: " + student1.getMinScore(0, 0, null));
-		System.out.println("Student GPA: " + student1.getStudentGPA(0, 0));
-		arrayStuff();
+		
+		
 	}
+
 
 	public static void arrayStuff() {
 		// Multi-dimensional array
 		String[][] multiArray = { { "Amanda ", "Java ", "Rocks " }, { "Chapman", "Integration" } };
-
-		System.out.println(multiArray[0][0] + multiArray[1][0] + multiArray[0][3] + multiArray[0][2] + multiArray[1][1]);
-
+		System.out.println(multiArray[0][0] + multiArray[1][0]);
+		System.out.println(multiArray[0][2] + multiArray[0][1]);
+		
 		// ArrayList
 		ArrayList<Integer> numbers = new ArrayList<Integer>(500);
-
 		numbers.add(10);
 		numbers.add(100);
 		numbers.add(67);
-
 		System.out.println(numbers.get(0));
+		
 		// 2D array
 		int[][] twoArray = { { 1, 2 }, { 3, 4 } };
 		for (int r = 0; r < twoArray.length; r++) {
@@ -55,12 +53,11 @@ class Student {
 	Scanner sc = new Scanner(System.in);
 	private String studentName;
 	private double courseGrade;
-	private double studentGPA;
+	
 	private double min;
 	int n;
 	double sum = 0;
 	double average;
-	double minScore;
 	double scores[];
 	double grade;
 
@@ -81,11 +78,7 @@ class Student {
 		courseGrade = grade;
 	}
 
-	public void setStudentGPA(Double GPA) {
-		studentGPA = GPA;
-	}
-
-	public void setArrayStuff(double minScore) {
+	public void setMinScore(double minScore) {
 		min = minScore;
 	}
 
@@ -123,17 +116,9 @@ class Student {
 
 		// print the average
 		System.out.println("\nYour grade average was: " + average);
-		grade = average; // assigns average to courseGrade
-		return grade;
-	}
-
-	public double getStudentGPA(double gpa, double GPA) {
-		Option3.getGPA();
-		GPA = gpa;
-		return GPA;
-	}
-
-	public double getMinScore(double minScore, int n, double[] scores) {
+		courseGrade = average; // assigns average to courseGrade
+		
+		double minScore;
 		// manually find the lowest score in the array and display to user
 		minScore = scores[0];
 		for (int i = 1; i < n; i++) {
@@ -141,7 +126,10 @@ class Student {
 				minScore = scores[i];
 			}
 		}
+		minScore = min;
 		System.out.println("Your lowest grade was: " + min);
-		return minScore;
+		return courseGrade;
+	
+		
 	}
 }
