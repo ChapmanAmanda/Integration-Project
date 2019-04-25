@@ -18,19 +18,31 @@ class GradeCalculator {
     final double MAXGRADE = 100.0; // Checkstyle does not allow for all caps
     double gradeSum = 0;
     double add = 0;
+    int assign = 0;
 
-    //greet
+    // greet
     System.out.println("Here we can calculate your average grade in a course.");
     // get number of assignments from user
     System.out.println("First, how many Assignments did you have? ");
-    int assign = sc.nextInt();
+    try {
+      assign = sc.nextInt();
+    } catch (Exception ex) {
+      System.out.println("Invalid entry");
+      sc.nextLine();
+    }
+
     // gets grade for each number of assignments
-    System.out.println("Enter your grade for each assignment as a whole or "
-        + "decimal number and hit enter: ");
-    
-    //gets assignment grades and adds to accumulator
+    System.out.println(
+        "Enter your grade for each assignment as a whole or " + "decimal number and hit enter: ");
+
+    // gets assignment grades and adds to accumulator
     for (int i = 0; i < assign; i++) {
-      add = sc.nextDouble();
+      try { // catch any invalid entry
+        add = sc.nextDouble();
+      } catch (Exception ex) {
+        System.out.println("Invalid entry");
+        sc.nextLine();
+      }
       while (add > MAXGRADE || add < 0) { // catches any grades that are too high
         System.out.println("Your grade is too high, must be < 100");
         add = sc.nextDouble();

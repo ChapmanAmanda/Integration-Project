@@ -15,18 +15,29 @@ class GpaCalculator {
     String grades = "";
     double total = 0;
     int points;
+    int classNum = 0;
     Scanner input = new Scanner(System.in, "utf-8");
     System.out.println("\nLet's calculate your GPA: ");
     // ask user for the number of classes
     System.out.println("How many classes did you take? Enter an integer: ");
-    int classNum = input.nextInt();
+    try {
+      classNum = input.nextInt();
+    } catch (Exception ex) {
+      System.out.println("Invalid entry");
+      input.nextLine();
+    }
 
     // get the grades for each class
     System.out.println("Enter your letter grade for each class (no number grades): ");
 
     for (int i = 0; i <= classNum; i++) { // this for loop runs for the amount
       // of classes
-      grades = input.nextLine();
+      try {
+        grades = input.nextLine();
+      } catch (Exception ex) {
+        System.out.println("Invalid entry");
+        input.nextLine();
+      }
 
       if (grades.toLowerCase().equals("a")) { // these if-else statements match
         // the points with the grade

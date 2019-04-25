@@ -21,7 +21,6 @@ class Arrays {
 
   // this method demonstrates the different uses for arrays
   public static void arrayStuff() {
-    System.out.println("");
 
     // Multi-dimensional array
     System.out.println("Demonstration of a multi-dimensional array: ");

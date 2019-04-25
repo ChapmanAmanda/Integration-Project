@@ -45,7 +45,12 @@ public class Student {
    */
   public String getStudentName(String name) {
     System.out.println("Please enter your name: ");
-    studentName = sc.nextLine();
+    try {
+      studentName = sc.nextLine();
+    } catch (Exception ex) {
+      System.out.println("Invalid entry");
+      sc.nextLine();
+    }
     return studentName;
   }
 
@@ -63,13 +68,24 @@ public class Student {
 
     // gets scores for number of assignments and accumulates the sum
     System.out.println("How many assignments were graded? ");
-    num = sc.nextInt();
+    try {
+      num = sc.nextInt();
+    } catch (Exception ex) {
+      System.out.println("Invalid entry");
+      sc.nextLine();
+      num = 1;
+    }  
     double[] scores = new double[num];
 
     // grades go into an array for each number of assignments
-    System.out.println("Enter your " + num + " grades and I will calculate your average:");
+    System.out.println("Enter your " + num + " grades and I will calculate your average: ");
     for (int i = 0; i < num; i++) {
-      scores[i] = sc.nextDouble();
+      try {
+        scores[i] = sc.nextDouble();
+      } catch (Exception ex) {
+        System.out.println("Invalid entry");
+        sc.nextLine();
+      }
     }
     
     for (double x : scores) { // enhanced for loop
