@@ -7,7 +7,9 @@
 class Polymorphism {
 
   public static void polymorphism() {
-    System.out.println("\nExcellent choice!\n");
+    System.out.println("\nExcellent choice!\nThis section demonstrates polymorphism "
+        + "and inheritance.\nAll Eagles are students. These are their grade "
+        + "levels and common phrases:\n ");
 
     Senior mySenior = new Senior(); // new Senior Eagle object
     Junior myJunior = new Junior(); // new Junior Eagle object

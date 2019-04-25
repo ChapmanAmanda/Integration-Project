@@ -9,7 +9,7 @@ class PrimitiveDataTypes {
   // as well as other java vocabulary words
   public static void dataTypes() {
 
-    System.out.println("\nExcellent choice!");
+    System.out.println("\nExcellent choice!\n Here are our primitive data types in Java: ");
     // System.out.println("Here is a list of our Primitive Data Types: ");
 
     String data = "\r\nbyte -- The byte data type is an 8-bit signed two's "

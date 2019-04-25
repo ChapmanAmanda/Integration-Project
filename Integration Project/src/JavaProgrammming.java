@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * This class is made up of java programming lessons that demonstrate how the random // and Math
+ * This class is made up of java programming lessons that demonstrate how the random and Math
  * class work.
  * 
  * @author Amanda
@@ -10,15 +10,17 @@ import java.util.Random;
 
 class JavaProgrammming {
   // menu choice #4
-  // javaQuiz method
   public static void java() {
-    System.out.println("\nExcellent Choice!\n");
+    System.out.println("\nExcellent Choice!");
     String test = "ternary";
     Random dice = new Random();
     int number;
     boolean maximum = 10 > 0;
-
+    
+    System.out.println("This section demonstrates how Java is able to \ngenerate "
+        + "random numbers and calculate minimum \nand maximum numbers through the math class.");
     // This uses the ternary construct to tell whether bools = "ternary"
+    System.out.println("Test the ternary:\n");
     String bools = test.equals("ternary") ? "test is \"ternary\"" : "test is not \"ternary\"";
     System.out.println(bools);
 
@@ -26,7 +28,7 @@ class JavaProgrammming {
     System.out.println("\nMinimum of 10 and 4 is: " + Math.min(4, 10));
 
     // This shows the boolean, whether it is true or false
-    System.out.println("The boolean is" + maximum);
+    System.out.println("The boolean is " + maximum + "because 10 > 0 .");
 
     // This is a Random dice generator
     // It will roll the dice 4 times and show the number rolled each time

@@ -24,7 +24,8 @@ public class Main {
     int menuChoice;
     boolean exit = false;
 
-    String greeting = "\nHello!\nWelcome to my program!";
+    String greeting = "\nHello!\nWelcome to my program!\nThis program shows "
+        + "everything I've learned in COP2006";
     System.out.println(greeting); // prints a greeting to the user
     do {
       // display menu and get input
@@ -69,6 +70,7 @@ public class Main {
           break;
         case 7:
           exit = true;
+          System.out.println("\nGoodbye! ");
           break;
         default:
           System.out.println("Invalid selection.");

@@ -17,6 +17,6 @@ class Senior extends Eagle {
   }
 
   public void makeSound() {
-    System.out.println("Most commonly used phrase: \"Yeet\"");
+    System.out.println("Most used phrase: \"Yeet\"");
   }
 }

@@ -19,11 +19,16 @@ class GradeCalculator {
     double gradeSum = 0;
     double add = 0;
 
+    //greet
+    System.out.println("Here we can calculate your average grade in a course.");
     // get number of assignments from user
-    System.out.println("How many Assignments did you have? ");
+    System.out.println("First, how many Assignments did you have? ");
     int assign = sc.nextInt();
-    // gets grades for each number of assignments
-    System.out.println("Enter your grades for your assignments: ");
+    // gets grade for each number of assignments
+    System.out.println("Enter your grade for each assignment as a whole or "
+        + "decimal number and hit enter: ");
+    
+    //gets assignment grades and adds to accumulator
     for (int i = 0; i < assign; i++) {
       add = sc.nextDouble();
       while (add > MAXGRADE || add < 0) { // catches any grades that are too high

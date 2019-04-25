@@ -18,11 +18,11 @@ class GpaCalculator {
     Scanner input = new Scanner(System.in, "utf-8");
     System.out.println("\nLet's calculate your GPA: ");
     // ask user for the number of classes
-    System.out.println("How many classes did you take? ");
+    System.out.println("How many classes did you take? Enter an integer: ");
     int classNum = input.nextInt();
 
     // get the grades for each class
-    System.out.println("Enter your letter grade for each class: ");
+    System.out.println("Enter your letter grade for each class (no number grades): ");
 
     for (int i = 0; i <= classNum; i++) { // this for loop runs for the amount
       // of classes

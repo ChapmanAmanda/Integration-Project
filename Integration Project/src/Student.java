@@ -71,6 +71,7 @@ public class Student {
     for (int i = 0; i < num; i++) {
       scores[i] = sc.nextDouble();
     }
+    
     for (double x : scores) { // enhanced for loop
       sum += x; // sum of an array
     }
@@ -83,7 +84,7 @@ public class Student {
     for (int i = 0; i < num; i++) {
       System.out.print(scores[i] + " ");
     }
-    sc.close();
+    
 
     // print the average
     System.out.println("\nYour grade average was: " + average);
@@ -97,8 +98,10 @@ public class Student {
         minScore = scores[i];
       }
     }
+    
     minScore = min; // the users lowest grade.
-    System.out.println("Your lowest grade was: " + min);
+    // System.out.println("Your lowest grade was: " + min);
     return courseGrade;
   }
+  
 }
